@@ -1,3 +1,92 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.box{
+  box-shadow: 0 0 15px #0aade4;
+}
+.gg{
+  background-image: linear-gradient(to top, #09203f 0%, #202427 100%);
+}
+.ggg{
+  background-image: linear-gradient(to top, #202427 0%, #09203f 100%);
+}
+.cursor-dot{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+
+.boxx:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-3deg, #59d102 -48%, #f3f520 200% );
+  transform: translate3d(-1px, -3px, 0) scale(1.5);
+  filter: blur(72px);
+  opacity: var(1);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+
+.boxx::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
+      
+      
+      
+
+
+
+
+
+
+
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100, 0.5);
+
+}
+.cursor-dot,.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.textanimated{
+  letter-spacing: 10px;
+  overflow: hidden;
+  animation:
+    typing 2s steps(7),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+  50%{border-color: transparent}
+}
+@keyframes typing{
+  from{width: 0}
+}
