@@ -7,7 +7,7 @@ import './index.css';
 export default function App() {
 
   useEffect(() => {
-    // Cursor movement logic
+
     const cursorDot = document.getElementById("data-cursor-dot");
     const cursorOutline = document.getElementById("data-cursor-outline");
 
@@ -26,7 +26,7 @@ export default function App() {
       });
     }
 
-    // GSAP animations logic
+    
     let t1 = gsap.timeline();
 
     t1.to(".box", {
@@ -55,7 +55,7 @@ export default function App() {
       display: "none",
     });
 
-  }, []); // empty dependency array ensures this runs only after component mount
+  }, []); 
 
   return (
     <>
