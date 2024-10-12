@@ -66,7 +66,7 @@ export default function App() {
         <h1 className="textanimated bg-gradient-to-r from-blue-500 to-pink-500
           bg-clip-text text-transparent opacity-100
           text-5xl font-semibold transition-all duration-300
-          hover:opacity-100 ">
+          hover:opacity-100 sm:text-2xl ">
           <Type />
         </h1>
       </div>
